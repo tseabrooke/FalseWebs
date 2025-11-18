@@ -1,0 +1,141 @@
+/* === Outer container: previous + current image side-by-side === */
+.test-face-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;                 /* spacing between previous and current image blocks */
+    margin-top: 20px;
+}
+
+/* === Previous image block === */
+.prev-block {
+    display: flex;
+    flex-direction: column;    /* text above image */
+    align-items: center;       /* center text and image */
+    gap: 10px;
+}
+
+/* Previous image */
+.left-face-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Hide previous image if none */
+.left-face-image.hidden {
+    visibility: hidden;
+}
+
+/* Comment above previous image */
+.prev-comment {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #003366;
+}
+
+/* === Current image + bullets block === */
+.main-and-bullets {
+    display: flex;
+    flex-direction: column;       /* current image left, bullets right */
+    align-items: flex-start;
+    gap: 10px;                 /* space between image and bullet box */
+}
+
+/* Current image */
+.face-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Comment above current image */
+.current-comment {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    align-self: center; 
+    color: #003366;
+}
+
+/* Bullet box to the right of current image */
+.training-container {
+    border: 2px solid #003366;
+    padding: 10px;
+    margin-top: 45px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 200px;
+}
+
+/* Header inside bullet box */
+.training-header {
+    font-size: 22px;
+    font-weight: bold;
+    color: #003366 !important;
+    margin-bottom: 10px;
+}
+
+/* Bullets inside training container */
+.training-bullets {
+    font-size: 20px;
+    color: #0055aa !important;
+    line-height: 1.6;
+    padding-left: 20px;
+    margin: 0;
+}
+
+/* === Scale labels below the images === */
+.scale-labels {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: #000000;
+    margin-top: 40px;
+}
+
+/* Feedback styling */
+.feedback {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+/* Choice row styling */
+.ChoiceRow, .q-choices, label {
+    background-color: white !important;
+    color: black !important;
+    margin-top: 20%;
+}
+
+/* General instructions text */
+.reg-text {
+    color: black !important;
+}
+
+/* Constrain survey width */
+.SkinInner {
+    width: 70% !important;
+}
+
+/* Attention check styling */
+.attention-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;       
+}
+
+.attention-text {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
